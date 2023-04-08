@@ -1,4 +1,4 @@
 # iconicli test project
 
-- Test project assignment for Iconicli
-- Using MongoDB, ExpressJS and React
+- Fullstack Test Project Assignment for Iconicli Internship
+- Using MongoDB, ExpressJS and ReactJS
