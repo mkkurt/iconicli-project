@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import model1 from "images/model1.jpg";
+import model1 from "../../../images/emre.jpeg";
 
 function Models() {
   const models = [

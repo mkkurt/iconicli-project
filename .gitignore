@@ -1,0 +1,12 @@
+node_modules
+.idea
+.log
+/node_modules
+/coverage
+/dist
+/cypress
+.DS_Store
+.env
+.vscode
+npm-debug.log*
+.coveralls.yml

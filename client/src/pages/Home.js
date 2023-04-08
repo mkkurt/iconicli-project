@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -14,6 +14,8 @@ function Home() {
   const { user } = useSelector((state) => state.authState);
   const [drawerToggle, setDrawerToggle] = useState(false);
 
+  const userRole = user.roles[0] === "ROLE_CLIENT" ? "Client" : "Model";
+
   return (
     <Container>
       <MobileHeader
@@ -26,6 +28,7 @@ function Home() {
         <Paper>
           <h2>{user.name}</h2>
           <h3>{user.email}</h3>
+          <h3 style={{ color: "purple" }}>{userRole}</h3>
         </Paper>
         <LogoutButton onClick={() => dispatch(logout())} />
         <Footer />
